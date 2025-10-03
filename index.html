@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-//trying changes or modify in the file
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +8,37 @@
     <title>My Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Header -->
     <div id="header">
         <div class="container">
             <nav>
-                <!-- <img src="images/logo.png" class="logo"></img> -->
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Specialities</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Specialities</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times"></i>
                 </ul>
                 <i class="fas fa-bars"></i>
             </nav>
             <div class="header-text">
-                <h1>Hello, I'm <span>Manjit</span><br></h1> 
-                <p>UI/UX Designer</p>
-                <h4>Persuing Mechanical Engineering</h4>
+                <h1>Hello, I'm <span>Manjit</span><br></h1>
+                <p>Software Developer</p>
+                <h4>B.Tech Final Year at NIT Silchar</h4>
             </div>
         </div>
     </div>
-    <!--About-->
+
+    <!-- About -->
     <div id="about">
         <div class="container">
             <div class="row">
@@ -41,70 +47,107 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p> I aspire to become a Mechanical Engineer while exploring Software engineering domain on my own. I am passionate about
-                        enhancing my skills in both areas. I possess critical thinking and problem-solving skills.I am committed to continually
-                        refining and expanding my skill set, ensuring I am well-equipped to tackle complex challenges and contribute
-                        meaningfully to the field.</p>
+                    <p>
+                        I am a final-year B.Tech student at NIT Silchar with a strong focus on Software Engineering.
+                        I specialize in C++, Python, React, and SQL, with hands-on experience developing web apps,
+                        automation tools, and data-driven solutions. I consistently rank among the top 10% in coding
+                        contests and have built projects handling 50+ concurrent users. Beyond academics, I have mentored
+                        100+ students through coding workshops and leadership roles in the Coding Club. My goal is to
+                        leverage my technical skills and problem-solving mindset to build scalable software solutions and
+                        grow as a Software Engineer.
+                    </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
                         <p class="tab-links" onclick="openTab('experience')">Experience</p>
                         <p class="tab-links" onclick="openTab('education')">Education</p>
                     </div>
+
+                    <!-- Skills -->
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing App interfaces</li>
-                            <li><span>Web Development</span><br>Web Development</li>
-                            <li><span>Graphic Design</span><br>creating creative designs</li>
+                            <li><span>Programming</span><br>C++, Python, JavaScript, SQL</li>
+                            <li><span>Web Development</span><br>React, HTML5, CSS3</li>
+                            <li><span>Data & Analytics</span><br>Pandas, NumPy, Power BI, Excel, MATLAB</li>
+                            <li><span>Core Concepts</span><br>DSA, OOP, File Handling, Image Processing</li>
+                            <li><span>Tools</span><br>Git, VS Code, Figma, Chrome DevTools</li>
                         </ul>
                     </div>
+
+                    <!-- Experience -->
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2022-2022</span><br>C++ programmer at Codsoft</li>
-                            <li><span>2022-2022</span><br>Graphic Designer at Orbit Graphics</li>
-                            <li><span>2020-2020</span><br>DTP operator at SCERT, Assam</li>
-                            <li><span>2015-2019</span><br>Assistant at Sonu Digital Studio</li>
+                            <li><span>2023</span><br>C++ Programmer Intern at CodSoft — Developed mini-projects (Contact Book, DSA Tracker) handling 200+ records with efficient search & file handling.</li>
+                            <li><span>2024</span><br>Frontend Developer (Project) — Built React-based To-Do App managing 50+ concurrent tasks with state management & local storage.</li>
+                            <li><span>2023–Present</span><br>Moderator, Coding Club NIT Silchar — Organized 5+ coding contests & mentored 100+ students in DSA using C++.</li>
+                            <li><span>2023–Present</span><br>Campus Ambassador, GeeksforGeeks — Promoted coding culture on campus, boosting participation by 20%.</li>
                         </ul>
                     </div>
+
+                    <!-- Education -->
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2022-currently</span><br>B.Tech in Mechanical engineering from NIT Silchar</li>
-                            <li><span>2022</span><br>HSLC from B. Borooah College</li>
-                            <li><span>2019</span><br>HSSLC from Gorkha High School</li>
+                            <li><span>2022–Present</span><br>B.Tech in Mechanical Engineering from NIT Silchar (CGPA: 6.57)</li>
+                            <li><span>2019–2021</span><br>Higher Secondary (Science) from B. Borooah College, Guwahati — 84%</li>
+                            <li><span>2019</span><br>Secondary School Certificate from Gorkha High School, Guwahati — 72%</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- services -->
+
+    <!-- Specialities -->
     <div id="services">
         <div class="container">
             <h1 class="sub-title">My Specialities</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-pen-nib"></i>
-                    <h2>Graphic Design</h2>
-                    <p>I have 5+ years of experience on Adobe Photoshop and 2+ years experienceon Adobe Illustrator.
-                         I have also done a paid internship on this domain at Orbit Graphics</p>
-                    <a href="https://drive.google.com/drive/u/2/folders/1QfsyAuEEoVBbXfuVpJZifkJQ0dUgh3BV">Learn more</a>
-                </div>
-                <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>I am still in learning phase but I love the web Development domain.</p>
-                    <a href="#">Learn more</a>
-
+                    <h2>Software Development</h2>
+                    <p>Strong foundation in C++, Python, and SQL with projects in DSA tools, automation, and data-driven applications.</p>
                 </div>
                 <div>
-
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>I have a keen eye for design,Which makes me a proficient UI/UX designer.</p>
-                    <a href="https://drive.google.com/file/d/1CaZtLPAtzadi_9s9nkCgXvgRDlKnnvB9/view?usp=sharing">Learn more</a>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>Web Development</h2>
+                    <p>Built interactive web apps using React, JavaScript, HTML, and CSS, including a To-Do List App handling 50+ tasks.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data & Analytics</h2>
+                    <p>Experience with data processing and visualization using Pandas, NumPy, Power BI, and Excel for actionable insights.</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-list-check"></i>
+                    <h2>To-Do List Web App</h2>
+                    <p>React app supporting add/edit/delete of tasks, handling 50+ concurrent tasks with state management & local storage.</p>
+                    <a href="https://manjit-poddar.github.io/ToDoReact/" target="_blank">View Project</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>DSA Tracker Tool</h2>
+                    <p>Automated problem-tracking tool in C++ with file handling, reducing manual logging effort by 60%.</p>
+                    <a href="https://github.com/Manjit-Poddar" target="_blank">GitHub</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-paw"></i>
+                    <h2>AI-Based Pet Adoption Platform</h2>
+                    <p>Designed adoption app using AI-builder tools with 5+ test users, implementing user-friendly onboarding flows.</p>
+                    <a href="#">Demo Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -117,6 +160,7 @@
                         <a href="https://twitter.com/ManjitPoddar03"><i class="fab fa-twitter-square"></i></a>
                         <a href="https://www.instagram.com/manjit_maheshwari/"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/manjit-poddar/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Manjit-Poddar"><i class="fab fa-github"></i></a>
                     </div>
                     <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
                 </div>
@@ -125,15 +169,14 @@
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn3">submit</button>
+                        <button type="submit" class="btn btn3">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-
-
+    <!-- Scripts -->
     <script>
         var tabLinks = document.getElementsByClassName('tab-links');
         var tabContents = document.getElementsByClassName('tab-contents');
@@ -149,7 +192,7 @@
             document.getElementById(tabName).classList.add('active-tab');
         }
 
-        // JavaScript
+        // Mobile nav toggle
         document.querySelector('.fas.fa-bars').addEventListener('click', function () {
             document.querySelector('nav ul').classList.toggle('show');
         });
@@ -157,7 +200,6 @@
         document.querySelector('.fas.fa-times').addEventListener('click', function () {
             document.querySelector('nav ul').classList.remove('show');
         });
-
     </script>
 </body>
 
